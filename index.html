@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Jireh Contabilidade e Assessoria Empresarial | Campinas - SP</title>
+  <meta name="description" content="Jireh Contabilidade e Assessoria Empresarial em Campinas-SP. Soluções contábeis para empresas, empresários e profissionais.">
+  <meta name="keywords" content="contabilidade Campinas, contador Campinas, assessoria empresarial, contabilidade empresarial, Jireh Contabilidade">
+  <meta name="author" content="Jireh Contabilidade e Assessoria Empresarial">
+
+  <meta property="og:title" content="Jireh Contabilidade e Assessoria Empresarial">
+  <meta property="og:description" content="Soluções contábeis e assessoria empresarial para sua empresa crescer com segurança.">
+  <meta property="og:type" content="website">
+
+  <style>
+    :root {
+      --primary: #123c35;
+      --primary-dark: #092b26;
+      --secondary: #c9a45c;
+      --secondary-light: #e1c989;
+      --cream: #f7f4ed;
+      --white: #ffffff;
+      --dark: #17221f;
+      --text: #53605c;
+      --border: #e7e4dc;
+      --success: #25d366;
+      --shadow: 0 15px 45px rgba(0,0,0,.09);
+      --radius: 18px;
+      --container: 1180px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(92%, var(--container));
+      margin: 0 auto;
+    }
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,.97);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(12px);
+    }
+
+    .nav {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--primary);
+    }
+
+    .logo-mark {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: var(--primary);
+      color: var(--secondary-light);
+      font-weight: 800;
+      font-size: 20px;
+      letter-spacing: -1px;
+    }
+
+    .logo-text strong {
+      display: block;
+      font-size: 17px;
+      letter-spacing: .3px;
+    }
+
+    .logo-text span {
+      display: block;
+      color: var(--secondary);
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .menu a {
+      color: var(--dark);
+      font-size: 14px;
+      font-weight: 600;
+      transition: .25s;
+    }
+
+    .menu a:hover {
+      color: var(--secondary);
+    }
+
+    .nav-button {
+      background: var(--primary);
+      color: white !important;
+      padding: 12px 20px;
+      border-radius: 9px;
+    }
+
+    .nav-button:hover {
+      background: var(--primary-dark);
+    }
+
+    .menu-toggle {
+      display: none;
+      border: 0;
+      background: transparent;
+      font-size: 28px;
+      cursor: pointer;
+      color: var(--primary);
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 85% 20%, rgba(201,164,92,.18), transparent 30%),
+        linear-gradient(135deg, #0d342e 0%, #123c35 55%, #1a4d43 100%);
+      color: white;
+      padding: 100px 0 110px;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 50%;
+      right: -150px;
+      top: -150px;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      align-items: center;
+      gap: 70px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--secondary-light);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 30px;
+      height: 2px;
+      background: var(--secondary);
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 5vw, 64px);
+      line-height: 1.08;
+      letter-spacing: -2px;
+      margin-bottom: 24px;
+      max-width: 700px;
+    }
+
+    .hero h1 span {
+      color: var(--secondary-light);
+    }
+
+    .hero p {
+      max-width: 620px;
+      color: rgba(255,255,255,.8);
+      font-size: 18px;
+      margin-bottom: 35px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      min-height: 52px;
+      padding: 0 24px;
+      border-radius: 9px;
+      font-size: 14px;
+      font-weight: 800;
+      transition: .25s;
+    }
+
+    .btn-primary {
+      background: var(--secondary);
+      color: #1d281f;
+    }
+
+    .btn-primary:hover {
+      background: var(--secondary-light);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(255,255,255,.35);
+      color: white;
+    }
+
+    .btn-outline:hover {
+      background: rgba(255,255,255,.1);
+    }
+
+    .hero-card {
+      position: relative;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 24px;
+      padding: 35px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 30px 80px rgba(0,0,0,.15);
+    }
+
+    .hero-card::before {
+      content: "J";
+      position: absolute;
+      right: 25px;
+      top: 0;
+      color: rgba(255,255,255,.04);
+      font-size: 170px;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .hero-card h3 {
+      font-size: 22px;
+      margin-bottom: 25px;
+      position: relative;
+    }
+
+    .hero-stat {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 18px 0;
+      border-bottom: 1px solid rgba(255,255,255,.12);
+    }
+
+    .hero-stat:last-child {
+      border-bottom: 0;
+    }
+
+    .stat-icon {
+      width: 43px;
+      height: 43px;
+      border-radius: 10px;
+      background: rgba(201,164,92,.15);
+      color: var(--secondary-light);
+      display: grid;
+      place-items: center;
+      font-size: 20px;
+    }
+
+    .hero-stat strong {
+      display: block;
+      color: white;
+      font-size: 14px;
+    }
+
+    .hero-stat span {
+      font-size: 12px;
+      color: rgba(255,255,255,.6);
+    }
+
+    /* =========================
+       TRUST BAR
+    ========================= */
+
+    .trust {
+      background: var(--cream);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .trust-item {
+      padding: 25px;
+      text-align: center;
+      border-right: 1px solid var(--border);
+    }
+
+    .trust-item:last-child {
+      border-right: 0;
+    }
+
+    .trust-item strong {
+      display: block;
+      color: var(--primary);
+      font-size: 15px;
+      margin-bottom: 3px;
+    }
+
+    .trust-item span {
+      font-size: 12px;
+      color: #7b817e;
+    }
+
+    /* =========================
+       SECTIONS
+    ========================= */
+
+    section {
+      padding: 95px 0;
+    }
+
+    .section-header {
+      max-width: 700px;
+      margin-bottom: 55px;
+    }
+
+    .section-header.center {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .section-label {
+      display: inline-block;
+      color: var(--secondary);
+      font-weight: 800;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+
+    .section-header h2 {
+      color: var(--dark);
+      font-size: clamp(30px, 4vw, 45px);
+      line-height: 1.15;
+      letter-spacing: -1.2px;
+      margin-bottom: 16px;
+    }
+
+    .section-header p {
+      font-size: 16px;
+      color: var(--text);
+    }
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .about-visual {
+      position: relative;
+      min-height: 470px;
+      border-radius: 25px;
+      overflow: hidden;
+      background:
+        linear-gradient(145deg, rgba(18,60,53,.97), rgba(10,43,38,.98));
+      display: flex;
+      align-items: flex-end;
+      padding: 35px;
+    }
+
+    .about-visual::before {
+      content: "";
+      position: absolute;
+      width: 330px;
+      height: 330px;
+      border: 1px solid rgba(201,164,92,.35);
+      border-radius: 50%;
+      top: -90px;
+      right: -90px;
+    }
+
+    .about-visual::after {
+      content: "JIREH";
+      position: absolute;
+      font-size: 85px;
+      font-weight: 900;
+      letter-spacing: 7px;
+      color: rgba(255,255,255,.035);
+      transform: rotate(-90deg);
+      right: -75px;
+      bottom: 115px;
+    }
+
+    .about-box {
+      position: relative;
+      z-index: 2;
+      color: white;
+      background: rgba(255,255,255,.09);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 16px;
+      padding: 25px;
+      width: 100%;
+      backdrop-filter: blur(10px);
+    }
+
+    .about-box strong {
+      display: block;
+      color: var(--secondary-light);
+      font-size: 25px;
+      margin-bottom: 5px;
+    }
+
+    .about-box span {
+      color: rgba(255,255,255,.7);
+      font-size: 13px;
+    }
+
+    .about-text p {
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    .check-list {
+      list-style: none;
+      display: grid;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .check-list li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      color: var(--dark);
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .check-list li::before {
+      content: "✓";
+      width: 22px;
+      height: 22px;
+      flex: 0 0 22px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: rgba(201,164,92,.17);
+      color: #9a762e;
+      font-weight: 900;
+    }
+
+    /* =========================
+       SERVICES
+    ========================= */
+
+    .services {
+      background: var(--cream);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 30px;
+      transition: .3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-7px);
+      box-shadow: var(--shadow);
+      border-color: rgba(201,164,92,.4);
+    }
+
+    .service-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 13px;
+      display: grid;
+      place-items: center;
+      background: rgba(18,60,53,.08);
+      color: var(--primary);
+      font-size: 23px;
+      margin-bottom: 23px;
+    }
+
+    .service-card h3 {
+      color: var(--dark);
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      font-size: 14px;
+      color: var(--text);
+    }
+
+    /* =========================
+       DIFFERENTIALS
+    ========================= */
+
+    .differentials-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .differential {
+      padding: 25px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: white;
+    }
+
+    .differential-number {
+      color: var(--secondary);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      margin-bottom: 30px;
+    }
+
+    .differential h3 {
+      color: var(--primary);
+      font-size: 17px;
+      margin-bottom: 9px;
+    }
+
+    .differential p {
+      font-size: 13px;
+    }
+
+    /* =========================
+       CTA
+    ========================= */
+
+    .cta {
+      padding: 75px 0;
+      background: var(--primary);
+      color: white;
+    }
+
+    .cta-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .cta h2 {
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+
+    .cta p {
+      color: rgba(255,255,255,.72);
+      max-width: 620px;
+    }
+
+    /* =========================
+       CONTACT
+    ========================= */
+
+    .contact {
+      background: #fafafa;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 65px;
+      align-items: start;
+    }
+
+    .contact-info {
+      display: grid;
+      gap: 15px;
+    }
+
+    .contact-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 22px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .contact-icon {
+      width: 43px;
+      height: 43px;
+      flex: 0 0 43px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      background: rgba(18,60,53,.08);
+      color: var(--primary);
+    }
+
+    .contact-card strong {
+      display: block;
+      color: var(--dark);
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+    .contact-card span {
+      font-size: 13px;
+    }
+
+    .map-box {
+      min-height: 390px;
+      border-radius: 22px;
+      overflow: hidden;
+      position: relative;
+      background:
+        linear-gradient(rgba(18,60,53,.91), rgba(18,60,53,.91)),
+        repeating-linear-gradient(
+          45deg,
+          #d7ddd9 0,
+          #d7ddd9 2px,
+          #cbd3ce 2px,
+          #cbd3ce 45px
+        );
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .map-content {
+      color: white;
+      max-width: 400px;
+    }
+
+    .map-pin {
+      font-size: 42px;
+      margin-bottom: 12px;
+    }
+
+    .map-content h3 {
+      font-size: 25px;
+      margin-bottom: 8px;
+    }
+
+    .map-content p {
+      color: rgba(255,255,255,.72);
+      font-size: 14px;
+      margin-bottom: 23px;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      background: #092b26;
+      color: white;
+      padding: 55px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 50px;
+      padding-bottom: 45px;
+      border-bottom: 1px solid rgba(255,255,255,.1);
+    }
+
+    .footer-logo {
+      margin-bottom: 18px;
+    }
+
+    .footer-about {
+      max-width: 430px;
+      color: rgba(255,255,255,.62);
+      font-size: 13px;
+    }
+
+    .footer h4 {
+      font-size: 14px;
+      margin-bottom: 18px;
+      color: var(--secondary-light);
+    }
+
+    .footer-links {
+      list-style: none;
+      display: grid;
+      gap: 9px;
+      font-size: 13px;
+      color: rgba(255,255,255,.65);
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
+    .footer-bottom {
+      padding-top: 22px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      color: rgba(255,255,255,.42);
+      font-size: 11px;
+    }
+
+    /* =========================
+       WHATSAPP
+    ========================= */
+
+    .whatsapp {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 999;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: var(--success);
+      color: white;
+      display: grid;
+      place-items: center;
+      font-size: 27px;
+      box-shadow: 0 10px 30px rgba(37,211,102,.35);
+      transition: .25s;
+    }
+
+    .whatsapp:hover {
+      transform: scale(1.08);
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+
+    @media (max-width: 950px) {
+      .hero-content,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card {
+        max-width: 600px;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .differentials-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .cta-content {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .nav {
+        min-height: 72px;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .menu {
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 15px 5%;
+        background: white;
+        border-bottom: 1px solid var(--border);
+        box-shadow: 0 15px 25px rgba(0,0,0,.07);
+      }
+
+      .menu.active {
+        display: flex;
+      }
+
+      .menu li {
+        padding: 12px 0;
+      }
+
+      .nav-button {
+        display: inline-block;
+      }
+
+      .hero {
+        padding: 75px 0 80px;
+      }
+
+      .hero h1 {
+        letter-spacing: -1px;
+      }
+
+      .trust-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .trust-item {
+        border-right: 0;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .trust-item:last-child {
+        border-bottom: 0;
+      }
+
+      section {
+        padding: 70px 0;
+      }
+
+      .services-grid,
+      .differentials-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-visual {
+        min-height: 350px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+      }
+
+      .whatsapp {
+        width: 53px;
+        height: 53px;
+        right: 17px;
+        bottom: 17px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+  <header>
+    <div class="container nav">
+
+      <a href="#inicio" class="logo">
+        <div class="logo-mark">J</div>
+        <div class="logo-text">
+          <strong>Jireh Contabilidade</strong>
+          <span>Assessoria Empresarial</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" aria-label="Abrir menu" id="menuToggle">
+        ☰
+      </button>
+
+      <nav>
+        <ul class="menu" id="menu">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#empresa">A Empresa</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li>
+            <a class="nav-button" href="#contato">Fale Conosco</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- =========================
+       HERO
+  ========================== -->
+  <main>
+
+    <section class="hero" id="inicio">
+      <div class="container hero-content">
+
+        <div>
+          <div class="eyebrow">Contabilidade &amp; Assessoria</div>
+
+          <h1>
+            Contabilidade que
+            <span>cuida do seu negócio.</span>
+          </h1>
+
+          <p>
+            Soluções contábeis e empresariais para ajudar sua empresa
+            a crescer com organização, segurança e tranquilidade.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#contato" class="btn btn-primary">
+              Solicitar atendimento →
+            </a>
+
+            <a href="#servicos" class="btn btn-outline">
+              Conheça nossos serviços
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+
+          <h3>Jireh Contabilidade</h3>
+
+          <div class="hero-stat">
+            <div class="stat-icon">✓</div>
+            <div>
+              <strong>Atendimento empresarial</strong>
+              <span>Suporte para as necessidades do seu negócio</span>
+            </div>
+          </div>
+
+          <div class="hero-stat">
+            <div class="stat-icon">▣</div>
+            <div>
+              <strong>Gestão contábil</strong>
+              <span>Informação organizada para apoiar suas decisões</span>
+            </div>
+          </div>
+
+          <div class="hero-stat">
+            <div class="stat-icon">◆</div>
+            <div>
+              <strong>Experiência</strong>
+              <span>Empresa estabelecida desde 2004</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================
+         TRUST
+    ========================== -->
+    <div class="trust">
+      <div class="container trust-grid">
+
+        <div class="trust-item">
+          <strong>Desde 2004</strong>
+          <span>Atuação no mercado</span>
+        </div>
+
+        <div class="trust-item">
+          <strong>Campinas – SP</strong>
+          <span>Atendimento empresarial</span>
+        </div>
+
+        <div class="trust-item">
+          <strong>Simples Nacional</strong>
+          <span>Empresa optante pelo regime</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- =========================
+         SOBRE
+    ========================== -->
+    <section id="empresa">
+      <div class="container about-grid">
+
+        <div class="about-visual">
+          <div class="about-box">
+            <strong>Jireh</strong>
+            <span>
+              Contabilidade e Assessoria Empresarial
+            </span>
+          </div>
+        </div>
+
+        <div class="about-text">
+
+          <div class="section-header">
+            <span class="section-label">A Empresa</span>
+
+            <h2>
+              Seu negócio merece uma contabilidade próxima e eficiente.
+            </h2>
+
+            <p>
+              A Jireh Contabilidade e Assessoria Empresarial atua
+              oferecendo suporte contábil e empresarial para empresas
+              que buscam organização e segurança em sua gestão.
+            </p>
+          </div>
+
+          <p>
+            Nosso trabalho é facilitar a rotina empresarial, transformar
+            informações contábeis em conhecimento útil e contribuir para
+            uma gestão mais organizada.
+          </p>
+
+          <ul class="check-list">
+            <li>Atendimento personalizado</li>
+            <li>Informações contábeis organizadas</li>
+            <li>Orientação para a rotina empresarial</li>
+            <li>Compromisso com o cliente</li>
+          </ul>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================
+         SERVIÇOS
+    ========================== -->
+    <section class="services" id="servicos">
+
+      <div class="container">
+
+        <div class="section-header center">
+          <span class="section-label">Nossos Serviços</span>
+
+          <h2>
+            Soluções para diferentes necessidades empresariais
+          </h2>
+
+          <p>
+            Conte com uma estrutura contábil para acompanhar
+            diferentes etapas da sua empresa.
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <article class="service-card">
+            <div class="service-icon">▤</div>
+            <h3>Contabilidade</h3>
+            <p>
+              Organização e acompanhamento das informações
+              contábeis da empresa.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">R$</div>
+            <h3>Fiscal e Tributário</h3>
+            <p>
+              Apoio na rotina fiscal e tributária, com foco
+              em organização e conformidade.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">♙</div>
+            <h3>Departamento Pessoal</h3>
+            <p>
+              Suporte às rotinas relacionadas aos colaboradores
+              e obrigações trabalhistas.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">▦</div>
+            <h3>Abertura e Regularização</h3>
+            <p>
+              Orientação para processos de abertura,
+              alterações e regularização empresarial.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">⌁</div>
+            <h3>Assessoria Empresarial</h3>
+            <p>
+              Apoio para empresários na organização e
+              acompanhamento da rotina do negócio.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">◈</div>
+            <h3>Planejamento</h3>
+            <p>
+              Informações e acompanhamento para auxiliar
+              no planejamento e na gestão empresarial.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         DIFERENCIAIS
+    ========================== -->
+    <section id="diferenciais">
+
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-label">Por que a Jireh?</span>
+
+          <h2>
+            Uma parceria para acompanhar sua empresa.
+          </h2>
+
+          <p>
+            Nosso propósito é tornar a contabilidade mais clara,
+            organizada e útil para o empresário.
+          </p>
+        </div>
+
+        <div class="differentials-grid">
+
+          <div class="differential">
+            <div class="differential-number">01</div>
+            <h3>Proximidade</h3>
+            <p>
+              Atendimento pensado para compreender a realidade
+              de cada empresa.
+            </p>
+          </div>
+
+          <div class="differential">
+            <div class="differential-number">02</div>
+            <h3>Organização</h3>
+            <p>
+              Processos e informações estruturados para facilitar
+              a rotina empresarial.
+            </p>
+          </div>
+
+          <div class="differential">
+            <div class="differential-number">03</div>
+            <h3>Experiência</h3>
+            <p>
+              Uma empresa com trajetória no mercado desde 2004.
+            </p>
+          </div>
+
+          <div class="differential">
+            <div class="differential-number">04</div>
+            <h3>Compromisso</h3>
+            <p>
+              Foco em oferecer suporte contábil adequado às
+              necessidades dos clientes.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         CTA
+    ========================== -->
+    <section class="cta">
+      <div class="container cta-content">
+
+        <div>
+          <h2>
+            Vamos conversar sobre sua empresa?
+          </h2>
+
+          <p>
+            Entre em contato com a Jireh Contabilidade e conheça
+            nossas soluções para sua empresa.
+          </p>
+        </div>
+
+        <a href="#contato" class="btn btn-primary">
+          Falar com a Jireh →
+        </a>
+
+      </div>
+    </section>
+
+    <!-- =========================
+         CONTATO
+    ========================== -->
+    <section class="contact" id="contato">
+
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-label">Contato</span>
+
+          <h2>
+            Estamos em Campinas – SP
+          </h2>
+
+          <p>
+            Será um prazer conversar com você e conhecer
+            as necessidades da sua empresa.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+
+          <div class="contact-info">
+
+            <div class="contact-card">
+              <div class="contact-icon">⌂</div>
+              <div>
+                <strong>Endereço</strong>
+                <span>
+                  Rua dos Carijós, 221<br>
+                  Vila Costa e Silva<br>
+                  Campinas – SP<br>
+                  CEP 13081-310
+                </span>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">CNPJ</div>
+              <div>
+                <strong>CNPJ</strong>
+                <span>06.790.002/0001-08</span>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">J</div>
+              <div>
+                <strong>Razão Social</strong>
+                <span>J H de B Porto Junior Contabilidade</span>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">✓</div>
+              <div>
+                <strong>Nome Fantasia</strong>
+                <span>Jireh Contabilidade e Assessoria Empresarial</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="map-box">
+
+            <div class="map-content">
+
+              <div class="map-pin">⌖</div>
+
+              <h3>Jireh Contabilidade</h3>
+
+              <p>
+                Rua dos Carijós, 221<br>
+                Vila Costa e Silva<br>
+                Campinas – SP · 13081-310
+              </p>
+
+              <a
+                class="btn btn-primary"
+                target="_blank"
+                rel="noopener"
+                href="https://www.google.com/maps/search/?api=1&query=Rua%20dos%20Carijos%2C%20221%2C%20Vila%20Costa%20e%20Silva%2C%20Campinas%20-%20SP"
+              >
+                Abrir no Google Maps
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+          <div class="logo footer-logo">
+            <div class="logo-mark">J</div>
+            <div class="logo-text">
+              <strong style="color:white;">Jireh Contabilidade</strong>
+              <span>Assessoria Empresarial</span>
+            </div>
+          </div>
+
+          <p class="footer-about">
+            Soluções contábeis e assessoria empresarial para
+            empresas que buscam organização, segurança e
+            tranquilidade para crescer.
+          </p>
+        </div>
+
+        <div>
+          <h4>Navegação</h4>
+
+          <ul class="footer-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#empresa">A Empresa</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#diferenciais">Diferenciais</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Contato</h4>
+
+          <ul class="footer-links">
+            <li>Rua dos Carijós, 221</li>
+            <li>Vila Costa e Silva</li>
+            <li>Campinas – SP</li>
+            <li>CEP 13081-310</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>
+          © <span id="year"></span> Jireh Contabilidade e Assessoria Empresarial.
+          Todos os direitos reservados.
+        </span>
+
+        <span>
+          CNPJ 06.790.002/0001-08
+        </span>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- WhatsApp
+       Substitua 5511999999999 pelo número oficial da empresa.
+  -->
+  <a
+    class="whatsapp"
+    href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20conhecer%20os%20serviços%20da%20Jireh%20Contabilidade."
+    target="_blank"
+    rel="noopener"
+    aria-label="Falar pelo WhatsApp"
+    title="Falar pelo WhatsApp"
+  >
+    ☎
+  </a>
+
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const menu = document.getElementById("menu");
+
+    menuToggle.addEventListener("click", () => {
+      menu.classList.toggle("active");
+    });
+
+    document.querySelectorAll(".menu a").forEach(link => {
+      link.addEventListener("click", () => {
+        menu.classList.remove("active");
+      });
+    });
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
